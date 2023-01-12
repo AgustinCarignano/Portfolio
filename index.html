@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Agustín Carignano</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <nav class="navbar">
+        <div class="largeNavbar">
+          <a href="#" class="largeNavbar-brand">Agustín Carignano</a>
+          <div>
+            <ul class="largeNavbar-list">
+              <li class="largeNavbar-item"><a href="#">Sobre mí</a></li>
+              <li class="largeNavbar-item">
+                <a href="#portfolio">Portfolio</a>
+              </li>
+              <li class="largeNavbar-item"><a href="#contact">Contacto</a></li>
+            </ul>
+            <img
+              src="./images/menu-hamburger-svgrepo-com.svg"
+              alt="icono menu hamburguesa"
+              class="largeNavbar-toggleMenu"
+              id="toggleMenu"
+            />
+          </div>
+        </div>
+        <div class="smallNavbar hidden" id="linksMenu">
+          <ul class="smallNavbar-list" id="linksList">
+            <li class="smallNavbar-item">
+              <a href="#">Sobre mí</a>
+            </li>
+            <li class="smallNavbar-item">
+              <a href="#portfolio">Portfolio</a>
+            </li>
+            <li class="smallNavbar-item">
+              <a href="#contact">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="about">
+        <h2 class="about-title">Sobre mí</h2>
+        <div class="about-content">
+          <img
+            src="./images/perfil.jpg"
+            alt="Foto de perfil"
+            class="about-img"
+          />
+          <div class="about-text">
+            <p>
+              ¡Hola! Mi nombre es Agustín, y estoy estudiando la carrera de
+              Desarrollador Full Stack.
+              <br />
+              Comencé a estudiar a mediados del 2022, habiendo completado ya los
+              cursos de "Desarrollo Web", "Java Script" y "React JS".
+              Actualmente me encuentro cursando el módulo de "programación Back
+              End", con el que completaré esta formación inicial de Fulls Stack.
+              <br />
+              Siempre me interesó el mundo de la programación, aunque mi
+              curiosidad por entender como se crean las cosas que usamos de
+              manera cotidiana me decantó por la carrera de Ingeniería Química
+              en su momento. La programación fue primero un pasatiempo, leyendo
+              algo de aquí y allí, hasta que decidí comenzar una formación más
+              seria, la cual sigo trabajando.
+              <br />
+              Actualmente, busco mi primer experiencia profesional como
+              desarrollador junior, para seguir aprendiendo sobre este
+              apasionante mundo de la programación.
+            </p>
+            <div class="about-icons">
+              <img src="./images/html-5-svgrepo-com.svg" alt="icono HTML5" />
+              <img src="./images/css-3-svgrepo-com.svg" alt="icono CSS3" />
+              <img src="./images/js-svgrepo-com.svg" alt="icono javascript" />
+              <img src="./images/react-svgrepo-com.svg" alt="icono react js" />
+              <img src="./images/node-js-svgrepo-com.svg" alt="icono node js" />
+              <img src="./images/git-svgrepo-com.svg" alt="icono git" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="portfolio" id="portfolio">
+        <h2 class="portfolio-title">Portfolio</h2>
+        <div class="portfolio-item">
+          <a
+            href="https://agustincarignano.github.io/barroca-carignano-project/"
+            class="portfolio-item-img"
+            target="_blank"
+          >
+            <img src="./images/desarroloWeb.png" alt="" />
+          </a>
+          <div class="portfolio-item-description">
+            <h4 class="portfolio-item-title">
+              Proyecto Desarrollo Web
+              <a
+                href="https://github.com/AgustinCarignano/barroca-carignano-project"
+                target="_blank"
+              >
+                <img
+                  src="./images/github-svgrepo-com.svg"
+                  alt="link al repositorio en github"
+                />
+              </a>
+            </h4>
+            <p class="portfolio-item-text">
+              <b>Barroca</b> es un sitio web estático de un e-commerce, creado
+              como trabajo final del curso de Desarrollo Web, utilizando HTML,
+              CSS, SASS y Bootstrap.
+            </p>
+          </div>
+        </div>
+
+        <div class="portfolio-item">
+          <a
+            href="https://github.com/AgustinCarignano/proyectoJS-carignano"
+            class="portfolio-item-img"
+            target="_blank"
+          >
+            <img src="./images/JS.png" alt="" />
+          </a>
+          <div class="portfolio-item-description">
+            <h4 class="portfolio-item-title">
+              Proyecto Java Script
+              <a
+                href="https://github.com/AgustinCarignano/proyectoJS-carignano"
+                target="_blank"
+              >
+                <img
+                  src="./images/github-svgrepo-com.svg"
+                  alt="link al repositorio en github"
+                />
+              </a>
+            </h4>
+            <p class="portfolio-item-text">
+              <b>Barroca</b> evolucionó mientras desarrollaba el curso de JS,
+              pasando ahora de una web estática a una aplicación que permite al
+              usuario interactuar con el contenido, elegir sus productos y
+              simular un proceso de compra. Apliqué en este proyecto las
+              funcionalidades básicas del lenguaje como ser: funciones, objetos,
+              JSON, AJAX.
+            </p>
+          </div>
+        </div>
+
+        <div class="portfolio-item">
+          <a
+            href="https://github.com/AgustinCarignano/ProyectoReact-Carignano"
+            class="portfolio-item-img"
+            target="_blank"
+          >
+            <img src="./images/React.png" alt="" />
+          </a>
+          <div class="portfolio-item-description">
+            <h4 class="portfolio-item-title">
+              Proyecto React JS
+              <a
+                href="https://github.com/AgustinCarignano/ProyectoReact-Carignano"
+                target="_blank"
+              >
+                <img
+                  src="./images/github-svgrepo-com.svg"
+                  alt="link al repositorio en github"
+                />
+              </a>
+            </h4>
+            <p class="portfolio-item-text">
+              <b>Tyrion</b> es un e-commerce de bebidas creado como proyecto
+              para el curso de React JS. En este app web se simula casi al
+              completo el proceso de compra, pudiendo generar una orden que es
+              enviada a una base de datos y que luego puede ser recibida por un
+              hipotetico vendedor. En este trabajo utilicé Create React App,
+              React Router Dom, Firestore de Firebase como base de datos,
+              logrando las funcionalidades mediante AJAX, Context, conditional
+              rendering, etc.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact" id="contact">
+        <h2 class="contact-title">Contacto</h2>
+        <div class="contact-icons">
+          <a href="https://github.com/AgustinCarignano" target="_blank">
+            <img src="./images/github-svgrepo-com.svg" alt="icono github" />
+          </a>
+          <a href="mailto:agustin.carignano@gmail.com">
+            <img src="./images/gmail-svgrepo-com.svg" alt="icono linkedin" />
+          </a>
+        </div>
+        <p class="contact-text">agustin.carignano@gmail.com</p>
+      </section>
+    </main>
+    <footer>
+      <p>Agustín Carignano - agustin.carignano@gmail.com</p>
+    </footer>
+
+    <script src="./main.js"></script>
+  </body>
+</html>
