@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
     <title>Agustín Carignano</title>
     <link rel="stylesheet" href="./css/style.css" />
   </head>
@@ -11,14 +12,25 @@
     <header class="header">
       <nav class="navbar">
         <div class="largeNavbar">
-          <a href="#" class="largeNavbar-brand">Agustín Carignano</a>
+          <a href="#"
+            ><img class="largeNavbar-brand" src="./images/logo.png" alt=""
+          /></a>
           <div>
             <ul class="largeNavbar-list">
-              <li class="largeNavbar-item"><a href="#">Sobre mí</a></li>
               <li class="largeNavbar-item">
-                <a href="#portfolio">Portfolio</a>
+                <a class="largeNavbar-item-anchor" href="#about">Sobre mí</a>
               </li>
-              <li class="largeNavbar-item"><a href="#contact">Contacto</a></li>
+              <li class="largeNavbar-item">
+                <a class="largeNavbar-item-anchor" href="#stack">Tecnologías</a>
+              </li>
+              <li class="largeNavbar-item">
+                <a class="largeNavbar-item-anchor" href="#portfolio"
+                  >Proyectos</a
+                >
+              </li>
+              <li class="largeNavbar-item">
+                <a class="largeNavbar-item-anchor" href="#contact">Contacto</a>
+              </li>
             </ul>
             <img
               src="./images/menu-hamburger-svgrepo-com.svg"
@@ -31,20 +43,40 @@
         <div class="smallNavbar hidden" id="linksMenu">
           <ul class="smallNavbar-list" id="linksList">
             <li class="smallNavbar-item">
-              <a href="#">Sobre mí</a>
+              <a class="smallNavbar-item-anchor" href="#about">Sobre mí</a>
             </li>
             <li class="smallNavbar-item">
-              <a href="#portfolio">Portfolio</a>
+              <a class="smallNavbar-item-anchor" href="#stack">Tecnologías</a>
             </li>
             <li class="smallNavbar-item">
-              <a href="#contact">Contacto</a>
+              <a class="smallNavbar-item-anchor" href="#portfolio">Proyectos</a>
+            </li>
+            <li class="smallNavbar-item">
+              <a class="smallNavbar-item-anchor" href="#contact">Contacto</a>
             </li>
           </ul>
         </div>
       </nav>
     </header>
     <main>
-      <section class="about">
+      <section class="home">
+        <div class="home-filter">
+          <div class="home-wrap">
+            <div class="home-container">
+              <h3 class="home-subtitle">¡Hola! Soy Agustín</h3>
+              <h1 class="home-title">Full Stack Developer</h1>
+            </div>
+            <div class="home-buttons">
+              <button class="home-buttons-btnLeft">
+                <a href="#contact">CONTACTO</a>
+              </button>
+              <button class="home-buttons-btnRight">RESUME</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="about" id="about">
         <h2 class="about-title">Sobre mí</h2>
         <div class="about-content">
           <img
@@ -54,131 +86,420 @@
           />
           <div class="about-text">
             <p>
-              ¡Hola! Mi nombre es Agustín, y estoy estudiando la carrera de
-              Desarrollador Full Stack.
-              <br />
-              Comencé a estudiar a mediados del 2022, habiendo completado ya los
-              cursos de "Desarrollo Web", "Java Script" y "React JS".
-              Actualmente me encuentro cursando el módulo de "programación Back
-              End", con el que completaré esta formación inicial de Fulls Stack.
-              <br />
-              Siempre me interesó el mundo de la programación, aunque mi
-              curiosidad por entender como se crean las cosas que usamos de
-              manera cotidiana me decantó por la carrera de Ingeniería Química
-              en su momento. La programación fue primero un pasatiempo, leyendo
-              algo de aquí y allí, hasta que decidí comenzar una formación más
-              seria, la cual sigo trabajando.
-              <br />
-              Actualmente, busco mi primer experiencia profesional como
-              desarrollador junior, para seguir aprendiendo sobre este
-              apasionante mundo de la programación.
+              👋¡Hola! Mi nombre es Agustín, soy Desarrollador Web Full Stack e
+              Ingeniero Químico.
             </p>
-            <div class="about-icons">
+            <p>
+              Curioso y metódico en esencia, analítico y organizado en mi
+              trabajo, siempre dispuesto a aprender y a colaborar en equipo
+              cuando se necesita.
+            </p>
+            <p>
+              Luego de trabajar como Ingeniero Químico por varios años, comencé
+              a interesarme por el Desarrollo Web, y he descubierto un mundo
+              fascinante que me entusiasma y motiva día a día para seguir
+              aprendiendo y creciendo como profesional.
+            </p>
+            <!-- <div class="about-icons">
               <img src="./images/html-5-svgrepo-com.svg" alt="icono HTML5" />
               <img src="./images/css-3-svgrepo-com.svg" alt="icono CSS3" />
               <img src="./images/js-svgrepo-com.svg" alt="icono javascript" />
               <img src="./images/react-svgrepo-com.svg" alt="icono react js" />
               <img src="./images/node-js-svgrepo-com.svg" alt="icono node js" />
               <img src="./images/git-svgrepo-com.svg" alt="icono git" />
-            </div>
+            </div> -->
           </div>
         </div>
       </section>
 
+      <section class="stack" id="stack">
+        <h2 class="stack-title">Stack Tecnológico</h2>
+        <div class="stack-container">
+          <div class="stack-card">
+            <h3 class="stack-card-title">Front End</h3>
+            <figure class="stack-card-figure">
+              <a
+                href="https://developer.mozilla.org/es/docs/Glossary/HTML5"
+                target="_blank"
+                ><img
+                  src="./images/html-5-svgrepo-com.svg"
+                  class="stack-card-icon"
+                  alt="html5 icon"
+              /></a>
+              <figcaption>HTML5</figcaption>
+            </figure>
+            <figure class="stack-card-figure">
+              <a
+                href="https://developer.mozilla.org/es/docs/Web/CSS"
+                target="_blank"
+              >
+                <img
+                  src="./images/css-3-svgrepo-com.svg"
+                  class="stack-card-icon"
+                  alt="css3 icon"
+              /></a>
+              <figcaption>CSS3</figcaption>
+            </figure>
+            <figure class="stack-card-figure">
+              <a
+                href="https://developer.mozilla.org/es/docs/Web/JavaScript"
+                target="_blank"
+              >
+                <img
+                  src="./images/js-svgrepo-com.svg"
+                  class="stack-card-icon"
+                  alt="javascript icon"
+              /></a>
+              <figcaption>JavaScript</figcaption>
+            </figure>
+            <figure class="stack-card-figure">
+              <a href="https://es.legacy.reactjs.org/" target="_blank">
+                <img
+                  src="./images/react-svgrepo-com.svg"
+                  class="stack-card-icon"
+                  alt="react icon"
+              /></a>
+              <figcaption>React</figcaption>
+            </figure>
+          </div>
+          <div class="stack-card">
+            <h3 class="stack-card-title">Back End</h3>
+            <figure class="stack-card-figure">
+              <a href="https://nodejs.org/en" target="_blank">
+                <img
+                  src="./images/nodejs-icon-svgrepo-com.svg"
+                  class="stack-card-icon"
+                  alt="node icon"
+              /></a>
+              <figcaption>Node.js</figcaption>
+            </figure>
+            <figure class="stack-card-figure">
+              <a href="https://www.typescriptlang.org/" target="_blank">
+                <img
+                  src="./images/typescript-logo-svgrepo-com.svg"
+                  class="stack-card-icon"
+                  alt="typescript icon"
+              /></a>
+              <figcaption>TypeScript</figcaption>
+            </figure>
+            <figure class="stack-card-figure">
+              <a href="https://www.mongodb.com/" target="_blank">
+                <img
+                  src="./images/mongo-svgrepo-com.svg"
+                  class="stack-card-icon"
+                  alt="mongo db icon"
+              /></a>
+              <figcaption>MongoDB</figcaption>
+            </figure>
+            <figure class="stack-card-figure">
+              <a href="https://www.mysql.com/" target="_blank">
+                <img
+                  src="./images/mysql-logo-svgrepo-com.svg"
+                  class="stack-card-icon"
+                  alt="MySQL icon"
+              /></a>
+              <figcaption>MySQL</figcaption>
+            </figure>
+          </div>
+          <div class="stack-card">
+            <h3 class="stack-card-title">DevOps</h3>
+            <figure class="stack-card-figure">
+              <a href="https://git-scm.com/" target="_blank">
+                <img
+                  src="./images/git-svgrepo-com.svg"
+                  class="stack-card-icon"
+                  alt="git icon"
+              /></a>
+              <figcaption>Git</figcaption>
+            </figure>
+            <figure class="stack-card-figure">
+              <a href="https://github.com/" target="_blank">
+                <img
+                  src="./images/github-svgrepo-com.svg"
+                  class="stack-card-icon"
+                  alt="github icon"
+              /></a>
+              <figcaption>GitHub</figcaption>
+            </figure>
+            <figure class="stack-card-figure">
+              <a href="https://vercel.com/" target="_blank">
+                <img
+                  src="./images/vercel-svgrepo-com.svg"
+                  class="stack-card-icon"
+                  alt="Vercel icon"
+              /></a>
+              <figcaption>Vercel</figcaption>
+            </figure>
+            <figure class="stack-card-figure">
+              <a href="https://www.netlify.com/" target="_blank">
+                <img
+                  src="./images/netlify-svgrepo-com.svg"
+                  class="stack-card-icon"
+                  alt="Netlify icon"
+              /></a>
+              <figcaption>Netlify</figcaption>
+            </figure>
+          </div>
+        </div>
+        <div class="stack-others">
+          <a href="https://sass-lang.com/" target="_blank"
+            ><img
+              src="./images/sass-svgrepo-com.svg"
+              class="stack-others-icon"
+              alt="sass icon"
+          /></a>
+          <a href="https://www.styled-components.com/" target="_blank"
+            ><img
+              src="./images/styled-svgrepo-com.svg"
+              class="stack-others-icon"
+              alt="styled components icon"
+          /></a>
+          <a href="https://reactrouter.com/" target="_blank"
+            ><img
+              src="./images/reactrouter-svgrepo-com.svg"
+              class="stack-others-icon"
+              alt="react router icon"
+          /></a>
+          <a href="https://es.redux.js.org/" target="_blank"
+            ><img
+              src="./images/redux-svgrepo-com.svg"
+              class="stack-others-icon"
+              alt="redux icon"
+          /></a>
+          <a href="https://firebase.google.com/?hl=es" target="_blank"
+            ><img
+              src="./images/firebase-svgrepo-com.svg"
+              class="stack-others-icon"
+              alt="firebase icon"
+          /></a>
+        </div>
+      </section>
+
       <section class="portfolio" id="portfolio">
-        <h2 class="portfolio-title">Portfolio</h2>
-        <div class="portfolio-item">
-          <a
-            href="https://agustincarignano.github.io/barroca-carignano-project/"
-            class="portfolio-item-img"
-            target="_blank"
-          >
-            <img src="./images/desarroloWeb.png" alt="" />
-          </a>
-          <div class="portfolio-item-description">
-            <h4 class="portfolio-item-title">
-              Proyecto Desarrollo Web
-              <a
-                href="https://github.com/AgustinCarignano/barroca-carignano-project"
-                target="_blank"
-              >
-                <img
-                  src="./images/github-svgrepo-com.svg"
-                  alt="link al repositorio en github"
-                />
-              </a>
-            </h4>
-            <p class="portfolio-item-text">
-              <b>Barroca</b> es un sitio web estático de un e-commerce, creado
-              como trabajo final del curso de Desarrollo Web, utilizando HTML,
-              CSS, SASS y Bootstrap.
-            </p>
+        <h2 class="portfolio-title">Proyectos</h2>
+        <div class="portfolio-container">
+          <div class="portfolio-item">
+            <img
+              class="portfolio-item-img"
+              src="./images/dashboardBackend.webp"
+              alt=""
+            />
+            <div class="portfolio-item-details">
+              <h4 class="portfolio-item-details-title">
+                Dashboard Miranda Backend
+              </h4>
+              <p class="portfolio-item-details-description">
+                API - Base de datos <br />
+                (En desarrollo)
+              </p>
+              <div class="portfolio-item-details-buttons">
+                <button class="home-buttons-btnLeft">
+                  <a
+                    href="https://github.com/AgustinCarignano/miranda-backend"
+                    target="_blank"
+                    class="portfolio-item-details-buttons-link"
+                  >
+                    <img src="./images/github-svgrepo-com.svg" alt="" />
+                    Github
+                  </a>
+                </button>
+              </div>
+            </div>
           </div>
-        </div>
-
-        <div class="portfolio-item">
-          <a
-            href="https://github.com/AgustinCarignano/proyectoJS-carignano"
-            class="portfolio-item-img"
-            target="_blank"
-          >
-            <img src="./images/JS.png" alt="" />
-          </a>
-          <div class="portfolio-item-description">
-            <h4 class="portfolio-item-title">
-              Proyecto Java Script
-              <a
-                href="https://github.com/AgustinCarignano/proyectoJS-carignano"
-                target="_blank"
-              >
-                <img
-                  src="./images/github-svgrepo-com.svg"
-                  alt="link al repositorio en github"
-                />
-              </a>
-            </h4>
-            <p class="portfolio-item-text">
-              <b>Barroca</b> evolucionó mientras desarrollaba el curso de JS,
-              pasando ahora de una web estática a una aplicación que permite al
-              usuario interactuar con el contenido, elegir sus productos y
-              simular un proceso de compra. Apliqué en este proyecto las
-              funcionalidades básicas del lenguaje como ser: funciones, objetos,
-              JSON, AJAX.
-            </p>
+          <div class="portfolio-item">
+            <img
+              class="portfolio-item-img"
+              src="./images/dashboard.webp"
+              alt=""
+            />
+            <div class="portfolio-item-details">
+              <h4 class="portfolio-item-details-title">
+                Dashboard Hotel Miranda
+              </h4>
+              <p class="portfolio-item-details-description">
+                App de gestion hotelera <br />
+                (En desarrollo)
+              </p>
+              <div class="portfolio-item-details-buttons">
+                <button class="home-buttons-btnLeft">
+                  <a
+                    href="https://github.com/AgustinCarignano/dashboard-app"
+                    target="_blank"
+                    class="portfolio-item-details-buttons-link"
+                  >
+                    <img src="./images/github-svgrepo-com.svg" alt="" />
+                    Github
+                  </a>
+                </button>
+                <button class="home-buttons-btnRight">
+                  <a
+                    href="https://agustincarignano.github.io/dashboard-app/"
+                    target="_blank"
+                    class="portfolio-item-details-buttons-link"
+                  >
+                    <img
+                      src="./images/web-svgrepo-com.svg"
+                      fill="#000"
+                      alt=""
+                    />
+                    Web
+                  </a>
+                </button>
+              </div>
+            </div>
           </div>
-        </div>
-
-        <div class="portfolio-item">
-          <a
-            href="https://github.com/AgustinCarignano/ProyectoReact-Carignano"
-            class="portfolio-item-img"
-            target="_blank"
-          >
-            <img src="./images/React.png" alt="" />
-          </a>
-          <div class="portfolio-item-description">
-            <h4 class="portfolio-item-title">
-              Proyecto React JS
-              <a
-                href="https://github.com/AgustinCarignano/ProyectoReact-Carignano"
-                target="_blank"
-              >
-                <img
-                  src="./images/github-svgrepo-com.svg"
-                  alt="link al repositorio en github"
-                />
-              </a>
-            </h4>
-            <p class="portfolio-item-text">
-              <b>Tyrion</b> es un e-commerce de bebidas creado como proyecto
-              para el curso de React JS. En este app web se simula casi al
-              completo el proceso de compra, pudiendo generar una orden que es
-              enviada a una base de datos y que luego puede ser recibida por un
-              hipotetico vendedor. En este trabajo utilicé Create React App,
-              React Router Dom, Firestore de Firebase como base de datos,
-              logrando las funcionalidades mediante AJAX, Context, conditional
-              rendering, etc.
-            </p>
+          <div class="portfolio-item">
+            <img
+              class="portfolio-item-img"
+              src="./images/mirandaHotel.webp"
+              alt=""
+            />
+            <div class="portfolio-item-details">
+              <h4 class="portfolio-item-details-title">Hotel Miranda</h4>
+              <p class="portfolio-item-details-description">
+                Página promocional y de reserva de habitaciones
+              </p>
+              <div class="portfolio-item-details-buttons">
+                <button class="home-buttons-btnLeft">
+                  <a
+                    href="https://github.com/AgustinCarignano/mirandaHotel"
+                    target="_blank"
+                    class="portfolio-item-details-buttons-link"
+                  >
+                    <img src="./images/github-svgrepo-com.svg" alt="" />
+                    Github
+                  </a>
+                </button>
+                <button class="home-buttons-btnRight">
+                  <a
+                    href="https://agustincarignano.github.io/mirandaHotel/"
+                    target="_blank"
+                    class="portfolio-item-details-buttons-link"
+                  >
+                    <img
+                      src="./images/web-svgrepo-com.svg"
+                      fill="#000"
+                      alt=""
+                    />
+                    Web
+                  </a>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="portfolio-item">
+            <img
+              class="portfolio-item-img"
+              src="./images/photoApp.webp"
+              alt=""
+            />
+            <div class="portfolio-item-details">
+              <h4 class="portfolio-item-details-title">App de fotos</h4>
+              <p class="portfolio-item-details-description">
+                Busqueda de fotos en Unsplash y <br />sección de favoritos
+              </p>
+              <div class="portfolio-item-details-buttons">
+                <button class="home-buttons-btnLeft">
+                  <a
+                    href="https://github.com/AgustinCarignano/photo-app"
+                    target="_blank"
+                    class="portfolio-item-details-buttons-link"
+                  >
+                    <img src="./images/github-svgrepo-com.svg" alt="" />
+                    Github
+                  </a>
+                </button>
+                <button class="home-buttons-btnRight">
+                  <a
+                    href="https://agustincarignano.github.io/photo-app"
+                    target="_blank"
+                    class="portfolio-item-details-buttons-link"
+                  >
+                    <img
+                      src="./images/web-svgrepo-com.svg"
+                      fill="#000"
+                      alt=""
+                    />
+                    Web
+                  </a>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="portfolio-item">
+            <img
+              class="portfolio-item-img"
+              src="./images/oxygenShop.webp"
+              alt=""
+            />
+            <div class="portfolio-item-details">
+              <h4 class="portfolio-item-details-title">Oxygen Shop</h4>
+              <p class="portfolio-item-details-description">
+                Landing Page <br /><br />
+              </p>
+              <div class="portfolio-item-details-buttons">
+                <button class="home-buttons-btnLeft">
+                  <a
+                    href="https://github.com/AgustinCarignano/Oxygen-moduloInicial"
+                    target="_blank"
+                    class="portfolio-item-details-buttons-link"
+                  >
+                    <img src="./images/github-svgrepo-com.svg" alt="" />
+                    Github
+                  </a>
+                </button>
+                <button class="home-buttons-btnRight">
+                  <a
+                    href="https://agustincarignano.github.io/Oxygen-moduloInicial/"
+                    target="_blank"
+                    class="portfolio-item-details-buttons-link"
+                  >
+                    <img
+                      src="./images/web-svgrepo-com.svg"
+                      fill="#000"
+                      alt=""
+                    />
+                    Web
+                  </a>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="portfolio-item">
+            <img class="portfolio-item-img" src="./images/tyron.webp" alt="" />
+            <div class="portfolio-item-details">
+              <h4 class="portfolio-item-details-title">Tyrion Drink Shop</h4>
+              <p class="portfolio-item-details-description">
+                Ecommerce de bebidas <br />
+                (Proyecto curso React)
+              </p>
+              <div class="portfolio-item-details-buttons">
+                <button class="home-buttons-btnLeft">
+                  <a
+                    href="https://github.com/AgustinCarignano/ProyectoReact-Carignano"
+                    target="_blank"
+                    class="portfolio-item-details-buttons-link"
+                  >
+                    <img src="./images/github-svgrepo-com.svg" alt="" />
+                    Github
+                  </a>
+                </button>
+                <button class="home-buttons-btnRight">
+                  <a
+                    href="https://proyecto-react-carignano.vercel.app/"
+                    target="_blank"
+                    class="portfolio-item-details-buttons-link"
+                  >
+                    <img
+                      src="./images/web-svgrepo-com.svg"
+                      fill="#000"
+                      alt=""
+                    />
+                    Web
+                  </a>
+                </button>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -186,8 +507,11 @@
       <section class="contact" id="contact">
         <h2 class="contact-title">Contacto</h2>
         <div class="contact-icons">
-          <a href="https://github.com/AgustinCarignano" target="_blank">
-            <img src="./images/github-svgrepo-com.svg" alt="icono github" />
+          <a
+            href="https://www.linkedin.com/in/agustin-carignano-2b6b9b121/"
+            target="_blank"
+          >
+            <img src="./images/linkedin-svgrepo-com.svg" alt="linkedin icon" />
           </a>
           <a href="mailto:agustin.carignano@gmail.com">
             <img src="./images/gmail-svgrepo-com.svg" alt="icono linkedin" />
