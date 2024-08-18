@@ -280,6 +280,8 @@ footer {
   .stack-others {
     margin-top: 30px;
     display: flex;
+    row-gap: 10px;
+    flex-wrap: wrap;
     width: 75%;
     justify-content: space-around; }
     .stack-others-icon {
@@ -291,8 +293,6 @@ footer {
   .stack-title {
     font-size: 2.5rem;
     width: 300px; }
-  .stack-others {
-    width: 100%; }
     .stack-others-icon {
       width: 60px; } }
 
